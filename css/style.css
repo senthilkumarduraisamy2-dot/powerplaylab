@@ -21,4 +21,30 @@
 .bundle-price { text-align:center; display:flex; flex-direction:column; }
 .bundle-price strong { font-family:"Baloo 2",sans-serif; color:var(--yellow); font-size:3.4rem; line-height:1; }
 .bundle-price span { color:#bbb; font-weight:800; font-size:.9rem; }
+
 @media (max-width:850px) { .pricing-grid { grid-template-columns:1fr; } .bundle-card { grid-template-columns:1fr; text-align:center; } .bundle-price { align-items:center; } }
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+}
+.zone-image-photo{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+    border-radius:var(--radius);
+}
+.zone-image-video{
+    width:100%;
+    height:450px;
+    display:block;
+    object-fit:contain;
+    border-radius:var(--radius);
+    background:#e9e4d7;
+}
+
+.zone-image:has(.zone-image-video){
+    height:450px;
+}
