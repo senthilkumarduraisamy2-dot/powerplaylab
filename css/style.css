@@ -48,3 +48,7 @@
 .zone-image:has(.zone-image-video){
     height:450px;
 }
+.btn-light {
+    background: #fff;
+    color: var(--ink);
+}
